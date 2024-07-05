@@ -1,0 +1,115 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #d5cab1;
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: "Pinto W00 NO_01", sans-serif;
+      }
+
+      .topnav a:hover {
+        background-color: #f44336;
+        color: black;
+      }
+
+      .topnav a.active {
+        background-color: #f44336;
+        color: black;
+      }
+
+      .topnav .search-container {
+        float: right;
+      }
+
+      .topnav input[type="text"] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+      }
+
+      .topnav .search-container button {
+        float: right;
+        padding: 6px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .topnav .search-container button:hover {
+        background: #ccc;
+      }
+
+      @media screen and (max-width: 600px) {
+        .topnav .search-container {
+          float: none;
+        }
+        .topnav a,
+        .topnav input[type="text"],
+        .topnav .search-container button {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 14px;
+        }
+        .topnav input[type="text"] {
+          border: 1px solid #ccc;
+        }
+      }
+      .navbar-logo {
+        height: 35px; /* Adjust the height as needed */
+        margin-right: 20px;
+        width: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" style="padding: 5.7px">
+        <img
+          src="{% static 'images/th.jpg' %}"
+          alt="Logo"
+          class="navbar-logo"
+        />
+      </a>
+      <a href="{% url 'list_movie' %}">Movie List</a>
+      <a href="{% url 'add_movie' %}">Upload Movie</a>
+      <a href="{% static 'movie_app/pdf/ema03.pdf' %}" target="_blank"
+        >Contact</a
+      >
+      <div class="search-container">
+        <form action="{% url 'search_movies' %}" method="get">
+          <input type="text" placeholder="Movie_Name.." name="search" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

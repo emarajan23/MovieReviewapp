@@ -1,0 +1,122 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 23%;
+  height: 350px; /* Set a consistent height for all cards */
+  overflow: hidden; /* Ensure content overflow is handled */
+
+}
+.post img {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+ 
+}
+
+.card-review {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width:31%;
+  height: 180px; /* Set a consistent height for all cards */
+  overflow: hidden; /* Ensure content overflow is handled */
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.flex-container {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  background-color: #f8f2e2;
+}
+.form-cont .form-group {
+  margin-bottom: 20px;
+}
+.form-cont .btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container-form {
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 500px;
+  margin: auto;
+  line-height: 4rem;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-movie-form .form-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.add-movie-form label {
+  display: block;
+  font-weight: bold;
+}
+
+.add-movie-form input[type="text"],
+.add-movie-form input[type="number"],
+.add-movie-form input[type="file"],
+.add-movie-form input[type="date"],
+.add-movie-form select {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin: 0;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.add-movie-form .submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #f44336;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-movie-form .submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 465px !important;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-size {
+  height: 30%;
+}
+
+.main-content {
+  background-color: #f8f2e2;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}menu{% endblock %}</title>
+    {% load static %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'movie_app/css/list.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'movie_app/css/samp.css' %}"
+    />
+  </head>
+  <body>
+    <div class="topnav">{% include 'movie_app/menu.html' %}</div>
+    <div class="main-content">{% block content %}{% endblock %}</div>
+  </body>
+</html>

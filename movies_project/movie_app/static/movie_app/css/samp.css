@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "Pinto W00 NO_01";
+  src: url("../fonts/PintoW00NO_01.woff2") format("woff2"),
+    url("../fonts/PintoW00NO_01.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container h2 {
+  font-family: "Pinto W00 NO_01", sans-serif;
+}
+.container-form h1 {
+  font-family: "Pinto W00 NO_01", sans-serif;
+  margin: 0%;
+  color: #f44336;
+}
+
+.loop {
+  display: flex;
+  justify-content: space-around;
+  background-color: #d5cbb0;
+  align-items: center;
+  font-family: "Pinto W00 NO_01", sans-serif;
+}
+.loop h2 {
+  font-weight: 500;
+}
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.container-popup .savebtn{
+  background-color:green;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+.container-popup .cancelbtn {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 1;
+  float: left;
+}
+
+
+
+.parent-class button {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+
+
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color:#d5cab1;
+  padding-top: 27px;
+  
+}
+.modal h1 {
+  margin: 0px;
+  font-family: "Pinto W00 NO_01", sans-serif;
+  color: #f44336;
+}
+.modal h3 {
+  margin: 0px;
+  font-family: "Pinto W00 NO_01", sans-serif;
+  color:black;
+}
+
+.modal-content {
+  padding: 1rem;
+  background-color: #fefefe;
+  /* margin: 5% auto 15% auto; */
+  margin: auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container-popup {
+  padding: 20px;
+  border-radius: 5px;
+  width: 650px;
+  margin: auto;
+  line-height: 3rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.popup-form .form-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.popup-form label {
+  display: block;
+  font-weight: bold;
+}
+
+.popup-form input[type="text"],
+.popup-form input[type="number"],
+.popup-form textarea,
+.popup-form select {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin: 0;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: white;
+}
+.popup-form textarea{
+ /* width: 150%; */
+ height:130px;
+}
+
+.movie-content {
+padding:1rem ;
+}
+
+
+  

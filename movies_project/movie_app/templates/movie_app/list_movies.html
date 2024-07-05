@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% extends 'movie_app/base.html' %} {% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{% static 'movie_app/css/list.css' %}" />
+  </head>
+  <body>
+    {% block content %}
+    <div class="flex-container">
+      {% for movie in movies %}
+      <div class="card">
+        {% if movie.poster %}
+        <a href="{% url 'movie_detail' pk=movie.pk %}">
+          <img
+            src="{{ movie.poster.url }}"
+            alt="{{ movie.movie_title }} poster"
+            style="width: 100%; height: 42%"
+          />
+        </a>
+        {% endif %}
+
+        <div class="container">
+          <h2 style="margin: 0"><b>{{ movie.movie_title}}</b></h2>
+          <p>Genre: {{ movie.genre }}</p>
+          <p>Release Date: {{ movie.release_date }}</p>
+          <p>Actor: {{ movie.actor }}</p>
+          <p>Year: {{ movie.year }}</p>
+        </div>
+      </div>
+
+      {% endfor %}
+    </div>
+
+    {% endblock %}
+  </body>
+</html>
